@@ -1,0 +1,16 @@
+@import "../../global.scss";
+
+.outputList {
+  padding-top: 20px;
+  background-color: $shopifyYellow;
+  padding-left: 32px;
+  font-family: $helvetica;
+  .prompt {
+    color: $shopifyGreen;
+  }
+  .response {
+    margin-top: 20px;
+    color: $shopifyGrey;
+    font-size: 20px;
+  }
+}

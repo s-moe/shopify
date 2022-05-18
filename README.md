@@ -1,8 +1,21 @@
-# Getting Started with Create React App
+# Ideaify
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The purpose of the project is to allow users to generate ideas for their businesses. This is done by using the OpenAi API. This project was styled using Sass and incorporates Shopify's brand colors and non-proprietary font families.
 
-## Available Scripts
+## Get Started
+
+First, be sure to run npm install to install your dependencies. You may also need to install the following:
+
+- npm install openai
+- npm install sass
+- npm install @mui/material @emotion/react @emotion/styled @material-ui/core
+
+Then, you will need to get an API key from OpenAi: https://openai.com/api/
+
+Once you have your free API key, go to the .env file and paste your API key where instructed.
+
+IMPORTANT: For security reasons, once you have pasted your API into the .env file add .env to the .gitignore file.
 
 In the project directory, you can run:
 
@@ -16,55 +29,27 @@ You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+There are a couple of unit tests to run, so go ahead and feel free to run them.
 
-### `npm run build`
+## How to use the app
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Simply type in your business or company type (i.e. bakery, travel, beauty, stationary) and upon clicking the button or pressing the Enter key the api will be called. After a couple of moments a list of product ideas will be generated and appear on the screen.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You can check the Increase Randomness checkbox to ensure little to no duplicates. When this checkbox is checked the temperature is increased. You can read more about temperature here: https://algowriting.medium.com/gpt-3-temperature-setting-101-41200ff0d0be
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### What I would like to update/improve
 
-### `npm run eject`
+- More unit tests
+- Set up a backend. This would help avoid the error thrown from OpenAi about being unable to set the unsafe header "User-Agent".
+- Implementing Browser, Router, Routes, and useRef for the ability to link and scroll to other pages
+- Creating a link inside the navBar for users to click on and get to their ideas list
+- Storing the data in localStorage or a backend so that if a user refreshes the page their ideas are still displayed
+- A button or link at the end of the page that scrolls you back to the top (the idea lists can get long)
+- Delete buttons for the individual ideas
+- Save or email buttons so users can save the ideas and/or email them to themselves or others
+- Additional components that hold pieces of code such as an OpenAi component and a checkbox component
+- Additional design features such as maybe another API that renders images of the product ideas that are being populated.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## About the Project and developer
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ideaify is a web application intended to help Shopify merchants come up with their next big thing. Sarah Moe is a software engineer with a background in law and business consulting. You could say she loves helping small business owners, which is one of reasons she created Ideaify. She also loves croissants, bicycling, and learning new things.

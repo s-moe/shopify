@@ -1,0 +1,18 @@
+@import "../../global.scss";
+
+.navbar {
+  max-width: 100%;
+  margin: 0 auto;
+
+  h1 {
+    color: $shopifyGreen;
+    margin-top: -70px;
+    margin-left: 78px;
+    font-family: $helvetica;
+    font-weight: bolder;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
