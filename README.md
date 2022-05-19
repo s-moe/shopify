@@ -37,7 +37,7 @@ Simply type in your business or company type (i.e. bakery, travel, beauty, stati
 
 You can check the Increase Randomness checkbox to ensure little to no duplicates. When this checkbox is checked the temperature is increased. You can read more about temperature here: https://algowriting.medium.com/gpt-3-temperature-setting-101-41200ff0d0be
 
-### What I would like to update/improve
+### What I would like to improve
 
 - More unit tests
 - Set up a backend. This would help avoid the error thrown from OpenAi about being unable to set the unsafe header "User-Agent".
