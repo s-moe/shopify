@@ -13,9 +13,9 @@ First, be sure to run npm install to install your dependencies. You may also nee
 
 Then, you will need to get an API key from OpenAi: https://openai.com/api/
 
-Once you have your free API key, go to the .env file and paste your API key where instructed.
+Once you have your free API key, you can either create a .env file and include it there, or if you are running it locally you can insert it App.js on line 30.
 
-IMPORTANT: For security reasons, once you have pasted your API into the .env file add .env to the .gitignore file.
+IMPORTANT: For security reasons, once you have pasted your API into the .env file add .env to the .gitignore file if it isn't already in there.
 
 In the project directory, you can run:
 
